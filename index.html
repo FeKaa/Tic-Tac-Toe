@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <link rel="" href="jqueryui/jquery-ui.structure.min.css" />
+    <link rel="" href="jqueryui/jquery-ui.theme.min.css" />
+
+    <script src="JS/tic-tac-toe.js"></script>
+    <script src="JS/nav.js"></script>
+    <script src="https://kit.fontawesome.com/551cfe3ab7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="CSS/tic-tac-toe.css" />
+    <link rel="stylesheet" href="CSS/nav.css" />
+    <link rel="stylesheet" href="Icons/fonts.css" />
+
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="menu1" style="display: none;">
+                <span id="x-cerrar" class="icon-x"></span>
+                <ul>
+                    <hr>
+                    <li>Color</li>
+                    <li id="boton-puntaje">
+                        Puntaje 
+                        <a href="#" id="accept" class="fas fa-check"></a>
+                        <a href="#" id="x-decline" class="icon-x"></a>
+                    </li>
+                    <hr>
+                    <li id=activarAdv class="fas fa-exclamation-triangle"></li>
+                    <hr>
+                    <li id="instagram" class="fab fa-instagram"></li>
+                    <li id="twitter" class="fab fa-twitter"></li>
+                    <li id="facebook" class="fab fa-facebook-f"></li>
+                    <hr>
+                </ul>
+            </div>
+            <div id="menu"><span class="icon-menu"></span></div>
+            <span id="span1">Tic-Tac-Toe</span>
+            <div id="fondo"><i class="fas fa-moon"></i></div>
+        </nav>
+    </header>
+
+
+    <table id="puntaje" style="display: none;">
+        <tr>
+            <td>
+                <h1 id="X-puntaje">X</h1>
+            </td>
+            <td>
+                <h1 id="O-puntaje">O</h1>
+            </td>
+        </tr>
+        <tr id="puntos1">
+            <td id="x1"></td>
+            <td id="o1"></td>
+        </tr>
+
+        <tr id="puntos2">
+            <td id="x2"></td>
+            <td id="o2"></td>
+        </tr>
+
+        <tr id="puntos3">
+            <td id="x3"></td>
+            <td id="o3"></td>
+        </tr>
+
+    </table>
+
+    <table id="table1">
+        <tr id="tr1">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr id="tr2">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr id="tr3">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div id="cargarJuego" style="display: none;">
+        <h1>¿Cargar el juego anterior?</h1>
+        <div id="confirm">Confirmar</div>
+        <div id="cancel">Cancelar</div>
+    </div>
+
+    <div id="cancelarJuego" style="display: none;">
+          <h2>Si cancela se perderá el juego anterior</h2> 
+          <h2>¿Seguro que desea continuar?</h2> 
+          <input type="checkbox" name="" id="noMostrar"> 
+          <h3>No volver a mostrar este mensaje</h3>
+          <div id="confirm1">Confirmar</div>
+          <div id="cancel1">Cancelar</div>
+    </div>
+
+</body>
+
+</html>

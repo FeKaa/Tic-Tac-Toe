@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'arial';
+}
+
+/*JUEGO*/
+body {
+    background-color: white;
+}
+
+#table1 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 10px auto;
+    background-color: #272727;
+}
+
+#table1 tr td {
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    font-size: 35px;
+    text-align: center;
+}
+
+#table1 tr td:hover {
+    background-color: #595e5c;
+    cursor: pointer;
+}
+
+.winner {
+    width: 240px;
+    height: 140px;
+    margin: 10px auto;
+    font-size: 60px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#verticalLine1 {
+
+    width: 2px;
+    height: 41.5%;
+    float: left;
+    position: absolute;
+    margin-left: -230px;
+    border: 1px inset white;
+    background-color: white;
+}
+
+#verticalLine2 {
+
+    width: 2px;
+    height: 41.5%;
+    float: left;
+    position: absolute;
+    margin-left: -140px;
+    border: 1px inset white;
+    background-color: white;
+}
+
+#verticalLine3 {
+
+    width: 2px;
+    height: 41.5%;
+    float: left;
+    position: absolute;
+    margin-left: -48px;
+    border: 1px inset white;
+    background-color: white;
+}
+
+#horizontalLine {
+    width: 20%;
+    height: 2px;
+    float: left;
+    position: absolute;
+    margin-left: -274.5px;
+    margin-top: 42px;
+    border: 1px inset white;
+    background-color: white;
+}
+
+#diagonalLine1 {
+    width: 28%;
+    height: 2px;
+    float: left;
+    position: absolute;
+    margin-left: -327px;
+    margin-top: 135px;
+    transform: rotateZ(45deg);
+    border: 1px inset white;
+    background-color: white;
+}
+
+#diagonalLine2 {
+    width: 28%;
+    height: 2px;
+    float: left;
+    position: absolute;
+    margin-left: -327px;
+    margin-top: 135px;
+    transform: rotateZ(-45deg);
+    border: 1px inset white;
+    background-color: white;
+}
+
+
+.winner span {
+    font-size: 40px;
+    display: block;
+}
+
+button {
+    width: 240px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+    background-color: #272727;
+    font-size: 40px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/*PUNTAJE*/
+
+#puntaje {
+    background-color: #272727;
+    margin-top: 0px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 1200px;
+}
+
+
+#puntaje tr td {
+    border: 2px solid white;
+}
+
+#X-puntaje {
+    color: #61892f;
+    margin-left: 11px;
+    padding: 1px;
+}
+
+#O-puntaje {
+    color: #e85a4f;
+    margin-left: 10px;
+}
+
+#x1,
+#o1,
+#x2,
+#o2,
+#x3,
+#o3 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#cargarJuego {
+    width: 380px;
+    height: 180px;
+    background: #272727;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: -220px;
+    border: 1px solid black;
+    box-shadow: 4px 10px 10px;
+    border-radius: 5px;
+}
+
+#cargarJuego h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#confirm {
+    color: white;
+    font-size: 20px;
+    margin-top: 95px;
+    margin-left: 30px;
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#confirm:hover {
+    background-color: white;
+    color: black;
+}
+
+#cancel {
+    color: white;
+    font-size: 20px;
+    margin-top: 95px;
+    margin-left: 260px;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 5px;
+    width: 90px;
+}
+
+#cancel:hover {
+    background-color: white;
+    color: black;
+}
+
+#cancelarJuego{
+    width: 380px;
+    height: 180px;
+    background: #272727;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: -220px;
+    border: 1px solid black;
+    box-shadow: 4px 10px 10px;
+    border-radius: 5px;
+}
+
+#cancelarJuego h2{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#noMostrar{
+    margin-top: 20px;
+    position: absolute;
+}
+
+#cancelarJuego h3{
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 28px;
+}
+
+
+#cancel1:hover, #confirm1:hover{
+    background-color: white;
+    color: black;
+}
+
+#confirm1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 30px;
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#cancel1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 260px;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 5px;
+    width: 90px;
+}
